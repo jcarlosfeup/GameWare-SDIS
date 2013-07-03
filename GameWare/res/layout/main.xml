@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fundo_400x800" >
+
+        <TextView
+            android:id="@+id/username_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/saudation_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bookmarks_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_something"
+            android:text="@string/bookmarks_button_text"
+            android:visibility="gone"
+            android:width="75dp" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_something"
+            android:text="@string/logout_button_text"
+            android:visibility="gone"
+            android:width="75dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/logo_gameware_250" />
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/search_edit_hint"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_edit"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_something"
+            android:text="@string/search_button_text"
+            android:width="100dp" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_something"
+            android:text="@string/register_button_text" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_something"
+            android:text="@string/login_button_text" />
+
+    </RelativeLayout>

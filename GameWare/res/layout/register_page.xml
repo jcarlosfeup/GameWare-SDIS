@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fundo_400x800" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.96" >
+
+        <EditText
+            android:id="@+id/register_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="@string/username_hint"
+            android:width="250dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_edit"
+            android:layout_below="@+id/register_edit"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:width="250dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_edit"
+            android:layout_centerHorizontal="true"
+            android:text="@string/register_button"
+            android:width="100dp" />
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/error_code"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo_gameware_250" />
+
+    </RelativeLayout>
+
+</LinearLayout>

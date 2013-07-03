@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="feup.sdis.gameware"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:name=".GameWareApp"
+        android:icon="@drawable/logo_gameware_250"
+        android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <activity
+            android:name=".GameWareActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:label="@string/login_activity_name" 
+            android:name=".LoginActivity" />
+        
+        <activity 
+            android:label="@string/register_activity_name" 
+            android:name=".RegisterActivity" />
+        
+        <activity 
+            android:label="@string/search_results_activity_name" 
+            android:name=".SearchResultsActivity" />
+
+        <activity 
+            android:label="@string/game_page_activity_name" 
+            android:name=".GamePageActivity"/>
+        
+        <activity 
+            android:label="@string/tab_info_activity_name" 
+            android:name=".TabInfoActivity"/>
+        
+        <activity 
+            android:label="@string/tab_videos_activity_name" 
+            android:name=".TabVideosActivity"/>
+        
+        <activity 
+            android:label="@string/tab_soundtrack_activity_name" 
+            android:name=".TabSoundtrackActivity"/>
+        
+        <activity 
+            android:label="@string/tab_reviews_activity_name" 
+            android:name=".TabReviewsActivity"/>
+        
+        <activity 
+            android:label="@string/characters_page_activity_name" 
+            android:name=".CharactersPageActivity"/>
+
+        <activity 
+            android:label="@string/locations_page_activity_name" 
+            android:name=".LocationsPageActivity"/>
+        
+        <activity 
+            android:label="@string/story_page_activity_name" 
+            android:name=".StoryPageActivity"/>
+
+        <activity 
+            android:label="@string/bookmarks_page_activity_name" 
+            android:name=".BookmarksActivity"/>
+        
+        <activity 
+            android:label="@string/music_stream_page_activity" 
+            android:name=".GrooveStreamActivity"/>
+        
+        <activity 
+            android:label="@string/character_page_activity" 
+            android:name="CharacterPageActivity"/>
+        
+        <activity 
+            android:label="@string/location_page_activity_name" 
+            android:name="LocationActivity"/>
+    </application>
+
+</manifest>
